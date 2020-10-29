@@ -9,7 +9,7 @@ Pytorch implementation for ManiGAN: Text-Guided Image Manipulation. The goal is 
 
 ### Data
 
-1. Download the preprocessed metadata for [bird](https://drive.google.com/file/d/1b8wxdYjZEV-oznxL3PohL84vuKlBW6Mm/view?usp=sharing) and [coco](https://drive.google.com/file/d/12xuNBDCsnjIhuaP3s2DGsufyfArWc5Dw/view?usp=sharing), and save both into `data/`
+1. Download the preprocessed metadata for [bird](https://drive.google.com/file/d/1R01J63Vqzg5463ycIyK_MHI4jXMFCihx/view?usp=sharing) and [coco](https://drive.google.com/file/d/12xuNBDCsnjIhuaP3s2DGsufyfArWc5Dw/view?usp=sharing), and save both into `data/`
 2. Download [bird](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) dataset and extract the images to `data/birds/`
 3. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
 
@@ -59,6 +59,8 @@ python DCM.py --cfg cfg/train_coco.yml --gpu 3
 
 - [DCM for bird](https://drive.google.com/file/d/1Wgu402wLWXEmZRIsq_NV22WvzYQZCMX5/view?usp=sharing). Download and save it to `models/`
 
+- To verify the IS value on the bird dataset, please use [this link](https://drive.google.com/file/d/16xenlYXs5qGBc4Sfa0qR3fAFGZ0ivt4B/view?usp=sharing). Download and save it to `models/`
+
 - [DCM for coco](https://drive.google.com/file/d/1Fjx71tWt8Ec0dvqtTeGj0kS5J46GwtZA/view?usp=sharing). Download and save it to `models/`
 
 ### Testing
@@ -96,11 +98,12 @@ python main.py --cfg cfg/eval_coco.yml --gpu 5
 If you find this useful for your research, please use the following.
 
 ```
-@article{li2019manigan,
-  title={ManiGAN: Text-Guided Image Manipulation},
+@inproceedings{li2020manigan,
+  title={Manigan: Text-guided image manipulation},
   author={Li, Bowen and Qi, Xiaojuan and Lukasiewicz, Thomas and Torr, Philip HS},
-  journal={arXiv preprint arXiv:1912.06203},
-  year={2019}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={7880--7889},
+  year={2020}
 }
 ```
 
